@@ -1,0 +1,11 @@
+{
+    "dataset": "voc",
+    "image_size": [512, 512],
+    "batch_size": 16,
+    "learning_rate": 0.00005,
+    "epochs": 30,
+    "feature_dim": 256,
+    "temperature": 3,
+    "pretrained_weights": "path/to/pretrained_weights.pth"
+}
+ 
