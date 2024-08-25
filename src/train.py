@@ -1,9 +1,12 @@
 import torch
 from models.mask2former import Mask2FormerAdapted
-from models.yolov10n import YOLOv10NAdapted  # Ensure correct import path
+from models.yolov10n import YOLOv10N # Ensure correct import path
 from trainers.trainer import Trainer
 from config import load_config
 from datasets import get_dataset
+
+
+
 
 def train(config_path):
     # Load configuration

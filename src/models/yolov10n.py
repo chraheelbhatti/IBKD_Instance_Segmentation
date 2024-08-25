@@ -1,9 +1,13 @@
-import torch.nn as nn
+import sys
+sys.path.append("/root/IBKD_Instance_Segmentation/yolov10")
 import os
 import torch
+import torch.nn as nn
 import urllib.request
-from yolov10.models import YOLOv10
-from yolov10.utils import load_pretrained_weights
+from yolov10.utils import load_pretrained_weights  # Adjust the path if necessary
+from yolov10.models.model import YOLOv10  # Adjust the path if necessary
+
+
 
 class YOLOv10N(nn.Module):
     def __init__(self, config):
